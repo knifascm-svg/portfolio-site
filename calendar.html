@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=109476161", "ym");
+
+      ym(109476161, "init", {
+        ssr: true,
+        webvisor: true,
+        clickmap: true,
+        ecommerce: "dataLayer",
+        referrer: document.referrer,
+        url: location.href,
+        accurateTrackBounce: true,
+        trackLinks: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/109476161"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <title>UWS — Календарь событий</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="calendar.css" />
+  </head>
+  <body>
+    <div class="cal-shell">
+      <div class="cal-app" data-view="year">
+        <header class="cal-header">
+          <div class="cal-logo">
+            <img src="assets/calendar/logo-group.svg" width="55" height="28" alt="UWS" />
+          </div>
+          <p class="cal-header__title">Календарь<br />событий</p>
+          <div class="cal-header__actions">
+            <div class="cal-period-toggle" role="tablist" aria-label="Период">
+              <span class="cal-period-toggle__pill" aria-hidden="true"></span>
+              <button class="cal-period-toggle__btn is-active" type="button" data-view="year" role="tab" aria-selected="true">Г</button>
+              <button class="cal-period-toggle__btn" type="button" data-view="month" role="tab" aria-selected="false">М</button>
+              <button class="cal-period-toggle__btn" type="button" data-view="day" role="tab" aria-selected="false">Д</button>
+            </div>
+            <button class="cal-filter" type="button" aria-label="Фильтр">
+              <img src="assets/calendar/filter.svg" width="16" height="16" alt="" />
+            </button>
+          </div>
+        </header>
+
+        <div class="cal-stage">
+          <section class="cal-view cal-view--year is-active" id="cal-year" data-view="year" aria-label="Год"></section>
+          <section class="cal-view cal-view--month" id="cal-month" data-view="month" aria-label="Месяц"></section>
+          <section class="cal-view cal-view--day" id="cal-day" data-view="day" aria-label="День"></section>
+        </div>
+
+        <footer class="cal-browser-bar" aria-hidden="true">
+          <span>Браузерная плашка</span>
+        </footer>
+      </div>
+    </div>
+
+    <script src="calendar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=1440" />
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] =
+        m[i] ||
+        function () {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].src === r) {
+          return;
+        }
+      }
+      (k = e.createElement(t)),
+        (a = e.getElementsByTagName(t)[0]),
+        (k.async = 1),
+        (k.src = r),
+        a.parentNode.insertBefore(k, a);
+    })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=109476161", "ym");
+
+    ym(109476161, "init", {
+      ssr: true,
+      webvisor: true,
+      clickmap: true,
+      ecommerce: "dataLayer",
+      referrer: document.referrer,
+      url: location.href,
+      accurateTrackBounce: true,
+      trackLinks: true,
+    });
+  </script>
+  <noscript
+    ><div>
+      <img
+        src="https://mc.yandex.ru/watch/109476161"
+        style="position: absolute; left: -9999px"
+        alt=""
+      /></div
+  ></noscript>
+  <!-- /Yandex.Metrika counter -->
+  <title>Корзина — UWS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cart.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a href="#" class="logo" aria-label="UWS">
+        <img src="assets/cart/logo-u.svg" width="24" height="15" alt="" />
+        <img src="assets/cart/logo-croc.svg" width="30" height="15" alt="" />
+        <img src="assets/cart/logo-s.svg" width="22" height="15" alt="" />
+        <img src="assets/cart/logo-w.svg" width="70" height="22" alt="" class="logo-mark" />
+      </a>
+      <nav class="nav" aria-hidden="true">
+        <a href="#">Календарь событий</a>
+        <a href="#">Интернет-магазин</a>
+        <a href="#">Кемпы и вечеринки</a>
+        <a href="#">Блог и новости</a>
+        <a href="#">О клубе</a>
+      </nav>
+      <div class="header-actions">
+        <button type="button" class="header-search" aria-hidden="true" tabindex="-1">
+          <img src="assets/cart/profile.svg" width="24" height="24" alt="" />
+        </button>
+        <button type="button" class="header-profile" aria-label="Профиль">
+          <img src="assets/cart/profile.svg" width="24" height="24" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="layout">
+        <div class="cart-title-row">
+          <h1 class="cart-title">Корзина</h1>
+          <button type="button" class="clear-cart" aria-label="Очистить корзину">
+            <img src="assets/cart/trash.svg" width="20" height="20" alt="" />
+          </button>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="product-row">
+              <div class="product-image">
+                <div class="product-image-bg"></div>
+                <img src="assets/cart/goggles.png" alt="Очки Speedo" />
+                <button type="button" class="wishlist" aria-label="В избранное">
+                  <img src="assets/cart/heart.svg" width="20" height="20" alt="" />
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-title">
+                  <p>Очки для плавания Speedo Fastskin Hyper Elite Mirror Black</p>
+                  <p>XXXL</p>
+                </div>
+                <p class="product-price"><span>1 300 </span><span class="currency">₽</span></p>
+                <div class="counter">
+                  <button type="button" class="counter-btn" aria-label="Удалить">
+                    <img src="assets/cart/trash.svg" width="20" height="20" alt="" />
+                  </button>
+                  <span class="counter-value">1</span>
+                  <button type="button" class="counter-btn" aria-label="Увеличить">
+                    <img src="assets/cart/plus-dark.svg" width="20" height="20" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="cross-sell">
+              <p class="cross-sell-title">К этому товару идеально подойдет</p>
+              <div class="carousel-wrap">
+                <div class="carousel" id="carousel1">
+                  <div class="mini-card">
+                    <div class="mini-image"><div class="mini-image-bg"></div><img src="assets/cart/swimsuit1.png" alt="" /></div>
+                    <p class="mini-title">Купальник женский для стартов</p>
+                    <div class="mini-action"><span class="mini-price">10 300 <span class="currency">₽</span></span><button type="button" aria-label="Добавить"><img src="assets/cart/plus.svg" width="20" height="20" alt="" /></button></div>
+                  </div>
+                  <div class="mini-card">
+                    <div class="mini-image"><div class="mini-image-bg"></div><img src="assets/cart/trunks-mini.png" alt="" /></div>
+                    <div class="mini-title-lines"><p>Плавки мужские Arena синие</p><p>XXXL</p></div>
+                    <div class="mini-action"><span class="mini-price">3 100 <span class="currency">₽</span></span><button type="button" aria-label="Добавить"><img src="assets/cart/plus.svg" width="20" height="20" alt="" /></button></div>
+                  </div>
+                  <div class="mini-card">
+                    <div class="mini-image"><div class="mini-image-bg"></div><img src="assets/cart/swimsuit2.png" alt="" /></div>
+                    <p class="mini-title">Купальник женский для стартов</p>
+                    <div class="mini-action"><span class="mini-price">7 500 <span class="currency">₽</span></span><button type="button" aria-label="Добавить"><img src="assets/cart/plus.svg" width="20" height="20" alt="" /></button></div>
+                  </div>
+                  <div class="mini-card">
+                    <div class="mini-image"><div class="mini-image-bg"></div><img src="assets/cart/swimsuit1.png" alt="" /></div>
+                    <p class="mini-title">Купальник женский для стартов</p>
+                    <div class="mini-action"><span class="mini-price">10 300 <span class="currency">₽</span></span><button type="button" aria-label="Добавить"><img src="assets/cart/plus.svg" width="20" height="20" alt="" /></button></div>
+                  </div>
+                  <div class="mini-card">
+                    <div class="mini-image"><div class="mini-image-bg"></div><img src="assets/cart/trunks-mini.png" alt="" /></div>
+                    <div class="mini-title-lines"><p>Плавки мужские Arena синие</p><p>XXXL</p></div>
+                    <div class="mini-action"><span class="mini-price">3 100 <span class="currency">₽</span></span><button type="button" aria-label="Добавить"><img src="assets/cart/plus.svg" width="20" height="20" alt="" /></button></div>
+                  </div>
+                </div>
+                <button type="button" class="carousel-next" data-target="carousel1" aria-label="Прокрутить">
+                  <img src="assets/cart/arrow.svg" width="48" height="48" alt="" />
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="product-row">
+              <div class="product-image">
+                <div class="product-image-bg"></div>
+                <img src="assets/cart/trunks.png" alt="Плавки Arena" />
+                <button type="button" class="wishlist" aria-label="В избранное">
+                  <img src="assets/cart/heart.svg" width="20" height="20" alt="" />
+                </button>
+              </div>
+              <div class="product-info">
+                <div class="product-title">
+                  <p>Плавки мужские Arena синие</p>
+                  <p>XXXL</p>
+                </div>
+                <p class="product-price"><span>1 300 </span><span class="currency">₽</span></p>
+                <div class="counter counter--minus">
+                  <button type="button" class="counter-btn counter-btn--minus" aria-label="Уменьшить количество">
+                    <img src="assets/cart/minus.svg" width="20" height="20" alt="" />
+                  </button>
+                  <span class="counter-value">3</span>
+                  <button type="button" class="counter-btn counter-btn--plus" aria-label="Увеличить">
+                    <img src="assets/cart/plus-dark.svg" width="20" height="20" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="cross-sell">
+              <p class="cross-sell-title">К этому товару идеально подойдет</p>
+              <div class="carousel-wrap">
+                <div class="carousel" id="carousel2">
+                  <div class="mini-card">
+                    <div class="mini-image"><div class="mini-image-bg"></div><img src="assets/cart/swimsuit1.png" alt="" /></div>
+                    <p class="mini-title">Купальник женский для стартов</p>
+                    <div class="mini-action"><span class="mini-price">10 300 <span class="currency">₽</span></span><button type="button" aria-label="Добавить"><img src="assets/cart/plus.svg" width="20" height="20" alt="" /></button></div>
+                  </div>
+                  <div class="mini-card">
+                    <div class="mini-image"><div class="mini-image-bg"></div><img src="assets/cart/trunks-mini.png" alt="" /></div>
+                    <div class="mini-title-lines"><p>Плавки мужские Arena синие</p><p>XXXL</p></div>
+                    <div class="mini-action"><span class="mini-price">3 100 <span class="currency">₽</span></span><button type="button" aria-label="Добавить"><img src="assets/cart/plus.svg" width="20" height="20" alt="" /></button></div>
+                  </div>
+                  <div class="mini-card">
+                    <div class="mini-image"><div class="mini-image-bg"></div><img src="assets/cart/swimsuit2.png" alt="" /></div>
+                    <p class="mini-title">Купальник женский для стартов</p>
+                    <div class="mini-action"><span class="mini-price">7 500 <span class="currency">₽</span></span><button type="button" aria-label="Добавить"><img src="assets/cart/plus.svg" width="20" height="20" alt="" /></button></div>
+                  </div>
+                  <div class="mini-card">
+                    <div class="mini-image"><div class="mini-image-bg"></div><img src="assets/cart/swimsuit1.png" alt="" /></div>
+                    <p class="mini-title">Купальник женский для стартов</p>
+                    <div class="mini-action"><span class="mini-price">10 300 <span class="currency">₽</span></span><button type="button" aria-label="Добавить"><img src="assets/cart/plus.svg" width="20" height="20" alt="" /></button></div>
+                  </div>
+                  <div class="mini-card">
+                    <div class="mini-image"><div class="mini-image-bg"></div><img src="assets/cart/trunks-mini.png" alt="" /></div>
+                    <div class="mini-title-lines"><p>Плавки мужские Arena синие</p><p>XXXL</p></div>
+                    <div class="mini-action"><span class="mini-price">3 100 <span class="currency">₽</span></span><button type="button" aria-label="Добавить"><img src="assets/cart/plus.svg" width="20" height="20" alt="" /></button></div>
+                  </div>
+                </div>
+                <button type="button" class="carousel-next" data-target="carousel2" aria-label="Прокрутить">
+                  <img src="assets/cart/arrow.svg" width="48" height="48" alt="" />
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <aside class="sidebar">
+          <div class="summary-card">
+            <input type="text" class="promo-input" placeholder="Промокод" />
+            <div class="summary-rows">
+              <div class="summary-row">
+                <span>2 товара</span>
+                <span>5 200 ₽</span>
+              </div>
+              <div class="summary-row summary-row--discount">
+                <span>Скидки</span>
+                <span>-200 ₽</span>
+              </div>
+            </div>
+            <div class="summary-total">
+              <span>Итог</span>
+              <span>5 000 ₽</span>
+            </div>
+            <button type="button" class="checkout-btn">Перейти к оформлению</button>
+          </div>
+          <div class="trust-card">
+            <div class="trust-item">
+              <img src="assets/cart/tick.svg" width="16" height="16" alt="" />
+              <span>Надежные товары и проверенное качество</span>
+            </div>
+            <div class="trust-item">
+              <img src="assets/cart/tick.svg" width="16" height="16" alt="" />
+              <span>Бесплатная доставка от 3 дня</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+  </div>
+  <script src="cart.js"></script>
+</body>
+</html>
