@@ -199,6 +199,17 @@ body {
   gap: 12px;
 }
 
+/* Скрыто с первого кадра — не ждём hero-sequence.js */
+.chat__rest .bubble:not(.is-revealed),
+.chat__rest .case-card:not(.is-revealed) {
+  display: none;
+}
+
+.chat__rest .bubble.is-revealed,
+.chat__rest .case-card.is-revealed {
+  display: block;
+}
+
 .chat-reveal:not(.is-revealed) {
   display: none;
 }

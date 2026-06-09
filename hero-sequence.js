@@ -39,8 +39,7 @@
   }
 
   function preloadChatAssets() {
-    const images = document.querySelectorAll(".profile-photo__base, .chat__rest img[src]");
-    return Promise.all([document.fonts.ready, ...Array.from(images).map(waitForImage)]);
+    return Promise.all([document.fonts.ready, waitForImage(profileImage)]);
   }
 
   function revealItem(item) {
