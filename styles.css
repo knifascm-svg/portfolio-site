@@ -405,19 +405,17 @@ body.hero-replied .hero__response-extra.is-revealed {
 
 .bubble--intro-name,
 .bubble--intro-role {
-  width: auto;
+  width: 200px;
   min-height: 44px;
   flex-shrink: 0;
 }
 
 .bubble--intro-name {
   border-radius: 4px;
-  min-width: 151px;
 }
 
 .bubble--intro-role {
   border-radius: 4px 4px 12px 4px;
-  min-width: 275px;
 }
 
 .bubble--intro-name p,
@@ -1062,7 +1060,7 @@ body.hero-replied .hero__response-extra.is-revealed {
   .bubble--intro-name,
   .bubble--intro-role {
     min-width: 0;
-    width: fit-content;
+    width: 200px;
     max-width: 100%;
   }
 
